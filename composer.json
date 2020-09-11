@@ -1,0 +1,34 @@
+{
+    "name": "nicolasgrancher/publish",
+    "description": "",
+    "type": "library",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Nicolas GRANCHER",
+            "email": "nicolas.grancher@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-zip": "^1.15",
+        "laminas/laminas-stdlib": "^3.2"
+    },
+    "require-dev": {
+        "ext-iconv": "*",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12.42",
+        "phpstan/phpstan-phpunit": "^0.12.16",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Publish\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
