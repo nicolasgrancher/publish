@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Publish;
 
 use Laminas\Stdlib\StringUtils;
@@ -12,8 +14,8 @@ use Publish\Exception\FileException;
  */
 class WordTemplateProcessor implements TemplateProcessorInterface
 {
-    const TAG_START = '${';
-    const TAG_END = '}';
+    protected const TAG_START = '${';
+    protected const TAG_END = '}';
 
     /**
      * @var array<string>

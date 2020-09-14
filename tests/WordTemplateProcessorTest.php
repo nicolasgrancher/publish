@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Tests\Publish;
 
@@ -13,7 +15,7 @@ use Publish\WordTemplateProcessor;
  */
 class WordTemplateProcessorTest extends TestCase
 {
-    const MODEL_SAMPLE_PATH = __DIR__ . '/Resources/model_sample.docx';
+    protected const MODEL_SAMPLE_PATH = __DIR__ . '/Resources/model_sample.docx';
 
     /**
      * @throws FileException
